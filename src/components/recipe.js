@@ -8,12 +8,7 @@ class Recipe extends React.Component{
 		this.state = {
 			showDetails: false
 		}
-		this.handleEdit = this.handleEdit.bind(this);
 		this.toggleDetails = this.toggleDetails.bind(this);
-	}
-
-	handleEdit(event){
-
 	}
 
 	toggleDetails(e){
@@ -26,20 +21,21 @@ class Recipe extends React.Component{
 	render(){
 		if(this.state.showDetails){
 			return(
-				<li>
+				<div>
 					<a href = "#" onClick = {this.toggleDetails}>{this.props.name}
 					</a>
-					<IndividualRecipe ingredients = {this.props.ingredients} editRecipe = {this.props.editRecipe} 
+					<IndividualRecipe ingredients = {this.props.ingredients} editRecipe = {this.props.editRecipe} //if clicked, show the individual recipes
 					deleteRecipe = {this.props.deleteRecipe}
-					name = {this.props.name}/>
-				</li>
+					name = {this.props.name}
+					toggleDetails = {this.toggleDetails}/>
+				</div>
 			);
 		}else{
 			return(
-				<li>
+				<div>
 					<a href = "#" onClick = {this.toggleDetails}>{this.props.name}
 					</a>
-				</li>
+				</div>
 			);
 		}
 

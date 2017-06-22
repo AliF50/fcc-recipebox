@@ -1,34 +1,19 @@
 let originalRecipes = [
 	{
 		name: 'Pizza',
-		ingredients: [
-			'Cheese',
-			'Dough',
-			'Tomato Sauce'
-		]
+		ingredients: 'Cheese, Dough, Tomato Sauce'
 	},
 	{
 		name: 'PBJ',
-		ingredients: [
-			'Bread',
-			'Peanut Butter',
-			'Jam'
-		]
+		ingredients: 'Bread, Peanut Butter, Jam'
 	},
 	{
 		name: 'Cereal',
-		ingredients: [
-			'Cereal',
-			'Milk'
-		]
+		ingredients: 'Cereal, Milk'
 	},
 	{
 		name: 'Having Fun',
-		ingredients: [
-			'Get a libary card',
-			'Think positively',
-			'Don\'t stress'
-		]
+		ingredients: 'Get a library card, Think positively, Don\'t stress, Learn a new skill'
 	}
 ];
 
