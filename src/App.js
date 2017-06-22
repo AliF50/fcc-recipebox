@@ -69,6 +69,7 @@ class App extends Component { //Main Application
       <div className = "recipes">
           <h1 className = "text-center">Recipes</h1>
           <p className = "text-center">Feel free to add your own and edit these recipes!</p>
+          <hr />
           {
             this.state.recipes.map((recipe, i) => {
               return <Recipe key = {i} name = {recipe.name} ingredients = {recipe.ingredients}

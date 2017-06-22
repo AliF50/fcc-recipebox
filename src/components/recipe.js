@@ -1,5 +1,6 @@
 import React from 'react';
 import IndividualRecipe from './individualRecipe.js';
+import './recipe.css';
 
 class Recipe extends React.Component{
 	constructor(props){
@@ -21,7 +22,7 @@ class Recipe extends React.Component{
 	render(){
 		if(this.state.showDetails){
 			return(
-				<div>
+				<div className = "recipe">
 					<a href = "#" onClick = {this.toggleDetails}>{this.props.name}
 					</a>
 					<IndividualRecipe ingredients = {this.props.ingredients} editRecipe = {this.props.editRecipe} //if clicked, show the individual recipes
@@ -32,7 +33,7 @@ class Recipe extends React.Component{
 			);
 		}else{
 			return(
-				<div>
+				<div className = "recipe">
 					<a href = "#" onClick = {this.toggleDetails}>{this.props.name}
 					</a>
 				</div>
