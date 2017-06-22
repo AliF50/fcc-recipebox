@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import IndividualRecipe from './individualRecipe.js';
 
 class Recipe extends React.Component{

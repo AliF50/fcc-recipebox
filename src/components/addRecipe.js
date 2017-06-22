@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Button, Modal, Form, Col, FormGroup, ButtonToolbar, ControlLabel, FormControl} from 'react-bootstrap';     
 
 class AddRecipe extends React.Component{
